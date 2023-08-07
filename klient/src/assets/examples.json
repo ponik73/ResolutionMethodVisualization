@@ -1,0 +1,480 @@
+{
+    "propositional": {
+        "domain": "Výroková logika",
+        "examples": [
+            {
+                "order": 1,
+                "label": "Ukážka č.1",
+                "goalIndex": 2,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "(P -> Q) & (Q -> R)"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "-Q & -R"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "-P"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "(-P | -Q) & (-Q | -R) & (-R | -P)"
+                    }
+                ]
+            },
+            {
+                "order": 2,
+                "label": "Ukážka č.2",
+                "goalIndex": 4,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "(P -> Q) -> Q"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "(P -> P) -> R"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "(R -> S) -> -(S -> Q)"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "R"
+                    }
+                ]
+            },
+            {
+                "order": 3,
+                "label": "Ukážka č.3",
+                "goalIndex": 4,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "P -> (Q & R)"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "-Q | -R"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "-P"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "-P & -Q & -R"
+                    }
+                ]
+            },
+            {
+                "order": 4,
+                "label": "Ukážka č.4",
+                "goalIndex": 4,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "(P -> Q) & (R -> S)"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "-Q | -S"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "-P | -R"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "-P & -Q & -R & -S"
+                    }
+                ]
+            },
+            {
+                "order": 5,
+                "label": "Ukážka č.5",
+                "goalIndex": 6,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "P -> (Q & R)"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "(-Q & S) -> T"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "(-P | -T) & R"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "(-S & T) -> -Q"
+                    },
+                    {
+                        "order": 5,
+                        "statement": "-Q"
+                    },
+                    {
+                        "order": 6,
+                        "statement": "P & R"
+                    }
+                ]
+            },
+            {
+                "order": 6,
+                "label": "Ukážka č.6",
+                "goalIndex": 5,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "(P & Q) -> R"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "(-P & S) -> T"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "(-Q & U) -> V"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "(-R & -T & -V)"
+                    },
+                    {
+                        "order": 5,
+                        "statement": "(-P & -Q)"
+                    }
+                ]
+            },
+            {
+                "order": 7,
+                "label": "Ukážka č.7",
+                "goalIndex": 3,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "P & Q"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "-P | -Q"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "-(P -> Q)"
+                    }
+                ]
+            },
+            {
+                "order": 8,
+                "label": "Ukážka č.8",
+                "goalIndex": 4,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "(-R & -S) -> -(S -> Q)"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "-(P -> Q) | Q"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "(P -> P) -> R"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "R"
+                    }
+                ]
+            }
+        ]
+    },
+    "predicate": {
+        "domain": "Predikátová logika",
+        "examples": [
+            {
+                "label": "Ukážka č.2",
+                "order": 2,
+                "goalIndex": 5,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "all x (hound(x) -> howl(x))"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "all x all y (have(x,y) & cat(y) -> - exists z (have(x,z) & mouse (z)))"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "all x (ls(x) -> - exists y (have(x,y) & howl(y)))"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "exists x (have(John,x) & (cat(x) | hound(x)))"
+                    },
+                    {
+                        "order": 5,
+                        "statement": "ls(John) -> - exists z (have(John,z) & mouse(z))"
+                    }
+                ]
+            },
+            {
+                "order": 1,
+                "label": "Ukážka č.1",
+                "goalIndex": 10,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "muz(Kozina)"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "chod(Kozina)"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "all x (chod(x) -> cech(x))"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "vrchnost(Lomikar)"
+                    },
+                    {
+                        "order": 5,
+                        "statement": "all x (chod(x) -> (oddan(x, Lomikar) | spor(x, Lomikar)))"
+                    },
+                    {
+                        "order": 6,
+                        "statement": "all x (osoba(x) -> exists y (osoba(y) -> oddan(x, y)))"
+                    },
+                    {
+                        "order": 7,
+                        "statement": "all x (osoba(x) -> all y ((vrchnost(y) & nenavidet(x, y)) -> -oddan(x, y)))"
+                    },
+                    {
+                        "order": 8,
+                        "statement": "nenavidet(Kozina, Lomikar)"
+                    },
+                    {
+                        "order": 9,
+                        "statement": "all x (muz(x) -> osoba(x))"
+                    },
+                    {
+                        "order": 10,
+                        "statement": "spor(Kozina, Lomikar)"
+                    }
+                ]
+            },
+            {
+                "order": 3,
+                "label": "Ukážka č.3",
+                "goalIndex": 7,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "all x (child(x) -> loves(x,Santa))"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "all x (loves(x,Santa) -> all y (reindeer(y) -> loves(x,y)))"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "reindeer(Rudolph) & rednose(Rudolph)"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "all x (rednose(x) -> wierd(x) | clown(x))"
+                    },
+                    {
+                        "order": 5,
+                        "statement": "- exists x (reindeer(x) & clown(x))"
+                    },
+                    {
+                        "order": 6,
+                        "statement": "all x (wierd(x) -> - loves(Scrooge,x))"
+                    },
+                    {
+                        "order": 7,
+                        "statement": "- child(Scrooge)"
+                    }
+                ]
+            },
+            {
+                "order": 4,
+                "label": "Ukážka č.4",
+                "goalIndex": 8,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "all x (food(x) -> likes(John, x))"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "food(Apple) & food(Vegetables)"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "all x all y (eats(x, y) & - killed(x) -> food(y))"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "eats(Mary, Peanuts) & alive(Mary)"
+                    },
+                    {
+                        "order": 5,
+                        "statement": "all x (eats(Mary, x) -> eats(Harry, x))"
+                    },
+                    {
+                        "order": 6,
+                        "statement": "all x (-killed(x) -> alive(x))"
+                    },
+                    {
+                        "order": 7,
+                        "statement": "all x (alive(x) -> -killed(x))"
+                    },
+                    {
+                        "order": 8,
+                        "statement": "likes(John, Peanuts)"
+                    }
+                ]
+            },
+            {
+                "order": 5,
+                "label": "Ukážka č.5",
+                "goalIndex": 6,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "all x (loves(Mary,x) -> star(x))"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "all x (student(x) & - pass(x) -> - play(x))"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "student(John)"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "all x (student(x) & - study(x) -> - pass(x))"
+                    },
+                    {
+                        "order": 5,
+                        "statement": "all x (- play(x) -> - star(x))"
+                    },
+                    {
+                        "order": 6,
+                        "statement": "- study(John) -> - loves(Mary,John)"
+                    }
+                ]
+            },
+            {
+                "order": 6,
+                "label": "Ukážka č.6",
+                "goalIndex": 5,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "all x (coyote(x) -> exists y (roadrunner(y) & chase(x,y)))"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "all x (roadrunner(x) & beep(x) -> smart(x))"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "- exists x exists y (coyote(x) & roadrunner(y) & smart(y) & catch(x,y))"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "all x (coyote(x) & exists y (roadrunner(y) & chase(x,y) & - catch(x,y)) -> frustrated(x))"
+                    },
+                    {
+                        "order": 5,
+                        "statement": "all x (roadrunner(x) -> beep(x)) -> all y (coyote(y) -> frustrated(y))"
+                    }
+                ]
+            },
+            {
+                "order": 7,
+                "label": "Ukážka č.7",
+                "goalIndex": 7,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "all x ((exists y (harley(y) & rides(x,y))) -> rough(x))"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "all x (biker(x) -> exists y ((harley(y) | bmw(y)) & rides(x,y)))"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "all x all y (rides(x,y) & bmw(y) -> yuppie(x))"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "all x (yuppie(x) -> lawyer(x))"
+                    },
+                    {
+                        "order": 5,
+                        "statement": "all x all y (nice(x) & rough(y) -> - date(x,y))"
+                    },
+                    {
+                        "order": 6,
+                        "statement": "nice(Mary) & biker(John)"
+                    },
+                    {
+                        "order": 7,
+                        "statement": "- lawyer(John) -> - date(Mary,John)"
+                    }
+                ]
+            },
+            {
+                "order": 8,
+                "label": "Ukážka č.8",
+                "goalIndex": 7,
+                "statements": [
+                    {
+                        "order": 1,
+                        "statement": "all x all y (child(x) & candy(y) -> loves(x,y))"
+                    },
+                    {
+                        "order": 2,
+                        "statement": "all x ( (exists y (candy(y) & loves(x,y))) -> - fanatic(x))"
+                    },
+                    {
+                        "order": 3,
+                        "statement": "all x ((exists y (pumpkin(y) & eat(x,y))) -> fanatic(x))"
+                    },
+                    {
+                        "order": 4,
+                        "statement": "all x all y (pumpkin(y) & buy(x,y) -> carve(x,y) | eat(x,y))"
+                    },
+                    {
+                        "order": 5,
+                        "statement": "exists x (pumpkin(x) & buy(John,x))"
+                    },
+                    {
+                        "order": 6,
+                        "statement": "candy(Snickers)"
+                    },
+                    {
+                        "order": 7,
+                        "statement": "child(John) -> exists x (pumpkin(x) & carve(John,x))"
+                    }
+                ]
+            }
+        ]
+    }
+}
